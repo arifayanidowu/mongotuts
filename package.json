@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "Arifayan Idowu",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stizzle123/mongotuts.git"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
