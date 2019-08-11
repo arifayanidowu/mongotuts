@@ -3,16 +3,21 @@ const mongoose = require("mongoose");
 mongoose.connect(
   process.env.MONGODB_URI,
   {
+    useNewUrlParser: true,
     useCreateIndex: true,
-    useNewUrlParser: true
+    useFindAndModify: false
   },
   err => {
     if (err) {
-      console.error.bind("Connection failed");
+      console.log(`[MONGODB]: Connection failed`);
     } else {
-      console.log("[MongoDB]: Connection successful");
+      console.log(`[MONGODB]: Connection successful`);
     }
   }
 );
-
-module.exports = mongoose;
+// .then(() => {
+//   console.log(`[MONGODB]: Connection established`);
+// })
+// .catch(err => {
+//   console.log(`MONGODB Connection failed.`);
+// });
