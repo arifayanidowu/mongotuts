@@ -15,9 +15,3 @@ mongoose.connect(
     }
   }
 );
-// .then(() => {
-//   console.log(`[MONGODB]: Connection established`);
-// })
-// .catch(err => {
-//   console.log(`MONGODB Connection failed.`);
-// });
